@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USee</string>
+    <string name="title_activity_comment">评论</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_send_msg">发送消息</string>
+    <string name="nav_drawer_share">分享</string>
+    <string name="nav_drawer_send">反馈</string>
+    <string name="about">关于</string>
+    <string name="searchTag">搜索标签</string>
+    <string name="tag_name">标签名</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="title_activity_talk">聊天界面</string>
+    <string name="notify">消息</string>
+    <string name="action_share">分享</string>
+    <string name="more">更多</string>
+    <string name="about_me_notify">我的消息</string>
+    <string name="allchoose">全选</string>
+    <string name="add_tag">添加标签</string>
+    <string name="send_msg">发送消息</string>
+    <string name="deadline">过期时间(默认七天)</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="theme_setting">主题设置</string>
+    <string name="about_us">关于我们</string>
+    <string name="head_settings">头像设置</string>
+    <string name="push_settins">是否开启推送</string>
+    <string name="about_us_title">关于我们</string>
+    <string name="about_us_content">Usee\n\n微信公众号:USee弹吧\n2016.08.25</string>
+    <string name="base_tag">基本系</string>
+    <string name="user_tag">自由系</string>
+    <string name="tag_buissness">U 系</string>
+    <string name="feedBack">反馈</string>
+    <string name="location_fail">定位失败,请打开定位功能后,重启应用</string>
+    <string name="location_fail_no_network">定位失败,请检测网络</string>
+    <string name="no_login_into_mymsg">请登录后执行此操作</string>
+    <string name="name_no_null">昵称不能为空</string>
+    <string name="change_usericon_fail">修改头像失败,请重试.</string>
+    <string name="no_unlike">不踩了</string>
+
+    <string name="enter_danmu_hint">Please enter danmu content</string>
+    <string name="anonymous">[Anonymous]</string>
+    <string name="account_manager">Account Management</string>
+    <string name="user_icon">user icon</string>
+    <string name="nickname">nickname</string>
+    <string name="gender">gender</string>
+    <string name="male">male</string>
+
+    <string name="female">female</string>
+
+    <string name="cellphone">cellphone</string>
+
+    <string name="not_bind">n/a</string>
+    <string name="not_tell">n/a</string>
+    <string name="wechat">wechat</string>
+    <string name="sina_weibo">sina weibo</string>
+    <string name="logout">logout</string>
+    <string name="my_topics">My Topics</string>
+    <string name="nearby_topics">Nearby Topics</string>
+
+    <string name="message_center">Message Center</string>
+    <string name="comment">comment&#160;</string>
+    <string name="reply">reply&#160;</string>
+    <string name="private_reply">private reply&#160;</string>
+    <string name="private_comment">private comment&#160;</string>
+    <string name="days_ago">&#160;days ago</string>
+
+    <string name="user_info">User Profile</string>
+    <string name="participated_topics">participated topics</string>
+
+    <string name="danmu_details">Danmu details</string>
+    <string name="private_string">private&#160;</string>
+
+    <string name="within_start">within&#160;</string>
+    <string name="within_m_end">m</string>
+    <string name="within_km_end">km</string>
+    <string name="comment_with_dots">comment...</string>
+</resources>

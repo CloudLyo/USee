@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <corners android:radius="30dp" />
+            <padding android:bottom="1dp" android:right="1dp" />
+            <solid android:color="#4D000000" />
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item android:drawable="@drawable/bt_add_tag"/>
+        </selector>
+    </item>
+</layer-list>

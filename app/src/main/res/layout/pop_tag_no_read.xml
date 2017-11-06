@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:text="标为未读"
+        android:textColor="#816d64"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:paddingRight="83dp"
+        android:paddingLeft="83dp"
+        android:paddingTop="@dimen/px_thirdty_two"
+        android:paddingBottom="@dimen/px_thirdty_two"
+        android:background="@drawable/edit_bg"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bt_cancel_collect"
+        android:text="取消收藏"
+        android:textColor="#816d64"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:paddingRight="83dp"
+        android:paddingLeft="83dp"
+        android:paddingTop="@dimen/px_thirdty_two"
+        android:paddingBottom="@dimen/px_thirdty_two"
+        android:background="@drawable/edit_bg"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

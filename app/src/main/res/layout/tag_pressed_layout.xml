@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--已读周边话题样式-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:paddingTop="@dimen/px_sixteen"
+    android:paddingBottom="@dimen/px_sixteen"
+    android:paddingLeft="@dimen/px_twenty_eight"
+    android:paddingRight="@dimen/px_twenty_eight"
+    android:background="@drawable/tag_bg_pressed"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bt_tag"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/ali_feedback_color_white"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="标签1"
+        android:maxWidth="@dimen/px_tag_max_width"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="16sp" />
+</RelativeLayout>

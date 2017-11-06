@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="男"
+        android:id="@+id/tv_ad"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#816d64"
+        android:padding="@dimen/px_thirdty_two"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cfcfcf" />
+    <TextView
+        android:id="@+id/tv_bilk"
+        android:layout_width="match_parent"
+        android:text="女"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#816d64"
+        android:padding="@dimen/px_thirdty_two"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cfcfcf" />
+    <TextView
+        android:id="@+id/tv_pornography"
+        android:layout_width="match_parent"
+        android:text="不透露"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#816d64"
+        android:padding="@dimen/px_thirdty_two"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cfcfcf" />
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:text="取消"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#5f7b8f"
+        android:padding="@dimen/px_thirdty_two"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

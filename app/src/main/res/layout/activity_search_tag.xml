@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:fitsSystemWindows="true"
+    tools:context="com.white.usee.app.activity.SearchTagActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/title"
+        android:paddingRight="@dimen/px_thirdty_two">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_ninety_six"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iv_background"
+            android:paddingBottom="@dimen/px_twenty_four"
+            android:paddingLeft="@dimen/title_back_padLeft"
+            android:paddingTop="@dimen/px_twenty_four"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_ninety_six"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/title_back">
+
+            <ImageView
+                android:id="@+id/id_search"
+                android:layout_width="@dimen/px_thirdty_two"
+                android:layout_height="@dimen/px_thirdty_two"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/search" />
+
+            <View
+                android:id="@+id/line_search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/id_search"
+                android:layout_marginTop="5dp"
+                android:background="#50bfea" />
+
+            <AutoCompleteTextView
+                android:layout_alignBottom="@id/line_search_edit"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/et_search_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="搜索话题"
+                android:paddingBottom="4dp"
+                android:paddingLeft="24dp"
+                android:textColorHint="#50bfea"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/ib_clean_text"
+                android:layout_width="@dimen/px_thirdty_two"
+                android:layout_height="@dimen/px_thirdty_two"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ib_clean_text"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_hot_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="@dimen/px_sixteen"
+        android:paddingLeft="@dimen/px_thirdty_two"
+        android:paddingRight="@dimen/px_thirdty_two"
+        android:paddingTop="@dimen/px_thirdty_two"
+        android:text="热门搜索"
+        android:textColor="#969696"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/list_hot_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hot_search"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp" />
+
+    <com.white.usee.app.view.WrapLineLayout
+        android:layout_marginLeft="@dimen/px_sixteen"
+        android:layout_marginRight="@dimen/px_sixteen"
+        android:id="@+id/ly_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_hot_search"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/view_shadow" />
+
+
+</RelativeLayout>

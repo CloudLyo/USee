@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#50bfea"
+    android:paddingLeft="@dimen/px_forty_eight"
+    android:paddingRight="@dimen/px_forty_eight"
+    android:paddingTop="@dimen/px_thirdty_two"
+    android:paddingBottom="@dimen/px_thirdty_two"
+    android:text="无相关结果，点此立即创建该话题"
+    android:textColor="@color/main_bg"
+    android:textSize="16sp" />

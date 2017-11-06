@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg">
+    <ImageButton
+        android:id="@+id/ib_send_danmu_audio"
+        android:layout_marginTop="@dimen/px_thirdty_two"
+        android:src="@drawable/audio"
+        android:paddingTop="@dimen/px_thirty_six"
+        android:paddingBottom="@dimen/px_thirty_six"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/photo_audio_send_danmu_bg"
+        android:layout_width="@dimen/px_one_hundred_sixty"
+        android:layout_height="@dimen/px_one_hundred_sixty" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#d4d4d4"
+        android:layout_height="1dp"/>
+    <View
+        android:layout_below="@id/ib_send_danmu_audio"
+        android:layout_width="match_parent"
+        android:background="#d4d4d4"
+        android:id="@+id/line"
+        android:layout_marginTop="15dp"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_below="@id/line"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_sixty_four">
+        <TextView
+            android:id="@+id/tv_speech_clear"
+            android:text="清除"
+            android:textSize="@dimen/sp_twenty_eight"
+            android:gravity="center"
+            android:textColor="@color/text_blue"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1dp"
+            android:background="#d4d4d4"
+            android:layout_height="@dimen/px_sixty_four"/>
+        <TextView
+            android:textSize="@dimen/sp_twenty_eight"
+            android:id="@+id/tv_speech_send"
+            android:textColor="@color/text_blue"
+            android:text="发送"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

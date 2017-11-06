@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/px_thirdty_two"
+    android:paddingLeft="@dimen/px_thirdty_two"
+    android:paddingBottom="@dimen/px_thirdty_two"
+    android:paddingRight="@dimen/px_thirdty_two"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="@dimen/px_sixty_four"
+        android:layout_height="@dimen/px_sixty_four">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/px_sixty_four"
+            android:src="@drawable/default_head"
+            android:scaleType="fitXY"
+            android:background="@color/transparent"
+            android:layout_height="@dimen/px_sixty_four" />
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/warn_has_new_comment"
+            android:id="@+id/iv_warn"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:layout_width="9dp"
+            android:layout_height="9dp"/>
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sex_man"
+            android:id="@+id/iv_sex"
+            android:layout_width="9dp"
+            android:layout_height="9dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_toRightOf="@id/rl_head"
+        android:id="@+id/ly_comment_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Susan"
+            android:textSize="14sp"
+            android:textColor="#5f7b8f"
+            android:layout_marginLeft="@dimen/px_twenty_four"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_comment_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="发在"
+            android:textColor="#969696"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/px_twenty_four"
+            android:layout_height="wrap_content"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="英国脱欧"
+            android:textSize="14sp"
+            android:textColor="#5f7b8f"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_topicName" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="13:10"
+        android:textSize="12sp"
+        android:id="@+id/tv_time"
+        android:textColor="#969696"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@id/rl_head"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/px_sixteen"
+        android:layout_marginLeft="@dimen/px_twenty_four"
+        android:id="@+id/tv_new_comment_num"
+        android:text="[12条新评论]"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:textColor="#969696"
+        android:layout_below="@id/ly_comment_person"
+        android:layout_height="wrap_content" />
+    <com.white.usee.app.util.emojicon.EmojiconTextView
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/px_sixteen"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/tv_comment_content"
+        android:text="脑残儿童欢乐多"
+        android:layout_toRightOf="@id/tv_new_comment_num"
+        android:textColor="#969696"
+        android:layout_below="@id/ly_comment_person"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

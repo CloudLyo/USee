@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main_bg"
+    android:layout_height="match_parent"
+    tools:context="com.white.usee.app.activity.BindPhoneActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/title"
+        android:paddingRight="@dimen/px_thirdty_two">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_ninety_six"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/px_twenty_four"
+            android:paddingLeft="@dimen/title_back_padLeft"
+            android:paddingTop="@dimen/px_twenty_four"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/title_back"
+            android:text="绑定手机号"
+            android:textColor="#f4f4f4"
+            android:textSize="@dimen/sp_eighteen"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_findpsw_psw"
+        android:background="@color/main_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_thirdty_two"
+        android:paddingRight="@dimen/px_thirdty_two"
+        android:paddingTop="@dimen/px_forty_eight"
+        android:paddingBottom="@dimen/px_forty_eight"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textColor="@color/warn_title"
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_bg_no_down"
+            android:hint="输入手机号"
+            android:paddingTop="@dimen/px_twenty_eight"
+            android:paddingBottom="@dimen/px_twenty_eight"
+            android:paddingLeft="@dimen/px_twenty_eight"
+            android:textColorHint="@color/text_hint"
+            android:textSize="14sp"
+            android:id="@+id/et_phoneNum"
+            android:inputType="phone"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="@color/warn_title"
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_bg_no_down"
+            android:hint="输入密码"
+            android:paddingTop="@dimen/px_twenty_eight"
+            android:paddingBottom="@dimen/px_twenty_eight"
+            android:paddingLeft="@dimen/px_twenty_eight"
+            android:textColorHint="@color/text_hint"
+            android:textSize="14sp"
+            android:id="@+id/et_pwd"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="0dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="@color/warn_title"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_bg"
+                android:hint="验证码"
+                android:inputType="number"
+                android:paddingTop="@dimen/px_twenty_eight"
+                android:paddingBottom="@dimen/px_twenty_eight"
+                android:paddingLeft="@dimen/px_twenty_eight"
+                android:textColorHint="@color/text_hint"
+                android:textSize="14sp"
+                android:id="@+id/et_codes"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="发送验证码"
+                android:id="@+id/tv_sendCode"
+                android:paddingRight="@dimen/px_twenty_eight"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/px_twenty_eight"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textColor="#528ec1"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_height="38dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_toLeftOf="@id/tv_sendCode"
+                android:layout_centerVertical="true"
+                android:background="@color/text_hint"
+                android:layout_height="15dp"/>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@color/main_bg"
+                android:text="绑定"
+                android:id="@+id/bt_bind_phone"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:background="@drawable/bt_next_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/view_shadow" />
+
+
+</RelativeLayout>

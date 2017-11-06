@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/tip_bg_no_down"
+        android:orientation="vertical"
+        android:padding="@dimen/px_thirdty_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/warn_tip"
+            android:gravity="center"
+            android:textColor="#816d64"
+            android:layout_width="@dimen/px_ninety_six"
+            android:layout_height="@dimen/px_ninety_six"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_gravity="center"
+            android:text="@string/dialog_tip_no_network"
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:textSize="14sp"
+            android:textColor="#816d64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_cancel"
+            android:textColor="#816d64"
+            android:background="@drawable/tip_bg_no_right"
+            android:text="取消"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_setting_network"
+            android:textSize="16sp"
+            android:text="去设置"
+            android:textColor="#528ec1"
+            android:background="@drawable/tip_bg"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

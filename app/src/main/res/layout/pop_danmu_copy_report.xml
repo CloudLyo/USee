@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:weightSum="2"
+              android:layout_width="132dp"
+              android:layout_height="match_parent">
+    <Button
+            android:id="@+id/bt_copy"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:layout_width="66dp"
+            android:text="复制"
+            android:textColor="#816d64"
+            android:textSize="16sp"
+            android:layout_height="@dimen/px_sixty_four"/>
+    <Button
+            android:id="@+id/bt_report"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:layout_width="66dp"
+            android:text="举报"
+            android:textColor="#816d64"
+            android:textSize="16sp"
+            android:layout_height="@dimen/px_sixty_four"/>
+</LinearLayout>

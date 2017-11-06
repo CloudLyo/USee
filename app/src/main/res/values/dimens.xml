@@ -1,0 +1,52 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="more_window_item_margin">12dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">18dp</dimen>
+    <dimen name="search_et_radius">10dp</dimen>
+    <dimen name="dialogutil_width">300dp</dimen>
+    <dimen name="dialogutil_height">100dp</dimen>
+    <dimen name="tag_title">18sp</dimen>
+    <dimen name="app_bar_height">250dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="space">20dp</dimen>
+    <dimen name="dialog_button_width">130dp</dimen>
+    <dimen name="dialog_button_height">55dp</dimen>
+    <dimen name="fab_size_mini">90dp</dimen>
+    <dimen name="px_forty_eight">24dp</dimen>
+    <dimen name="px_thirdty_two">16dp</dimen>
+    <dimen name="px_twenty_four">12dp</dimen>
+    <dimen name="sp_eighteen">18sp</dimen>
+    <dimen name="px_sixteen">8dp</dimen>
+    <dimen name="px_ninety_six">48dp</dimen>
+    <dimen name="px_eighty">40dp</dimen>
+    <dimen name="sp_thirty_two">16sp</dimen>
+    <dimen name="shadow_height">2dp</dimen>
+    <dimen name="px_sixty_four">32dp</dimen>
+    <dimen name="px_twenty_eight">14dp</dimen>
+    <dimen name="sp_twenty_four">12sp</dimen>
+    <dimen name="sp_twenty_eight">14sp</dimen>
+    <dimen name="px_two_hundred">100dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="px_four_hundred_sixty">230dp</dimen>
+    <dimen name="title_back_left">7dp</dimen>
+    <dimen name="title_back_padLeft">6dp</dimen>
+    <dimen name="px_twnty_eight">14dp</dimen>
+    <dimen name="danmuview_height">500dp</dimen>
+    <dimen name="px_tag_max_width">120dp</dimen>
+    <dimen name="et_comment_max_height">150dp</dimen>
+    <dimen name="px_one_hundred_sixty">80dp</dimen>
+    <dimen name="px_forty_two">21dp</dimen>
+    <dimen name="px_thirty_six">18dp</dimen>
+    <dimen name="px_one_hundred_ninety_six">98dp</dimen>
+    <dimen name="px_four">2dp</dimen>
+    <dimen name="header_huge">168dp</dimen>
+</resources>

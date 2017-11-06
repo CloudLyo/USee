@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/et_shadow"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="@dimen/px_sixteen"
+        android:paddingLeft="@dimen/px_thirdty_two"
+        android:paddingRight="@dimen/px_thirdty_two"
+        android:paddingTop="@dimen/px_sixteen">
+        <Button
+            android:id="@+id/bt_private"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_private" />
+
+        <ImageButton
+            android:id="@+id/bt_select_id"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_sixteen"
+            android:scaleType="fitXY"
+            android:layout_toRightOf="@id/bt_private"
+            android:background="@color/transparent"
+            android:src="@drawable/default_head" />
+
+        <ImageView
+            android:layout_width="@dimen/px_sixteen"
+            android:layout_height="@dimen/px_sixteen"
+            android:layout_alignBottom="@id/bt_select_id"
+            android:layout_alignRight="@id/bt_select_id"
+            android:src="@drawable/triangle" />
+
+        <Button
+            android:id="@+id/bt_sendComment"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_sendmsg_bg" />
+
+        <Button
+            android:id="@+id/bt_emoji"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_sixteen"
+            android:layout_toLeftOf="@id/bt_sendComment"
+            android:background="@drawable/emoji" />
+
+        <com.white.usee.app.util.emojicon.EmojiconEditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_sixteen"
+            android:layout_toLeftOf="@id/bt_emoji"
+            android:layout_toRightOf="@id/bt_select_id"
+            android:background="@color/transparent"
+            android:hint="评论..."
+            android:textColor="#000000"
+            android:textColorHint="#CECECE"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:textSize="@dimen/sp_thirty_two" />
+    </RelativeLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+    <include
+        android:visibility="gone"
+        android:id="@+id/ly_select_id"
+        layout="@layout/layout_select_id"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:paddingTop="15dp">
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="23dp"
+                android:scaleType="fitXY"
+                android:layout_height="23dp"
+                />
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@id/iv_head"
+                android:id="@+id/tv_comment"
+                android:textSize="16sp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="评论一"
+                android:layout_toLeftOf="@+id/bt_reply"
+                android:layout_toStartOf="@+id/bt_reply" />
+            <ImageButton
+                android:background="@drawable/ic_reply_24dp"
+                android:id="@+id/bt_reply"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/fl_inner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ededed">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_ninety_six"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/px_twenty_four">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/pull_to_refresh_image"
+                    android:layout_width="@dimen/px_forty_eight"
+                    android:layout_height="@dimen/px_forty_eight"
+                    android:src="@drawable/default_ptr_rotate" />
+
+                <ProgressBar
+                    android:id="@+id/pull_to_refresh_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/px_forty_eight"
+                    android:layout_height="@dimen/px_forty_eight"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_sixteen"
+                    android:layout_toRightOf="@id/pull_to_refresh_image"
+                    android:singleLine="true"
+                    android:text="刷新中"
+                    android:textColor="#cfcfcf"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_sub_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/et_shadow"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</merge>

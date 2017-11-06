@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_bg_corner_8dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="@string/send_msg"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/primary_text"
+        android:background="?attr/top_layout_color"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_sendMsg"
+            android:hint="输入发送消息"
+            android:maxLines="1"
+            android:textColor="@color/tag_item_text_normal_light"
+            android:maxLength="28"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="58dp"
+            android:text="(还剩28个字)"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_marginLeft="20dp"
+        android:id="@+id/checkbox_showPicker"
+        android:layout_width="match_parent"
+        android:text="@string/deadline"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_picker"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <NumberPicker
+            android:id="@+id/picker_day"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="天"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <NumberPicker
+            android:id="@+id/picker_hour"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="小时"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_alignParentLeft="true"
+            android:text="@string/cancel"
+            android:textSize="20sp"
+            android:background="@drawable/cancel_button"
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height" />
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_alignParentRight="true"
+            android:text="@string/ok"
+            android:textSize="20sp"
+            android:background="@drawable/ok_button"
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height" />
+    </RelativeLayout>
+
+</LinearLayout>

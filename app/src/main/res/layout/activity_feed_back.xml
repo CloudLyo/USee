@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:fitsSystemWindows="true"
+    tools:context="com.white.usee.app.activity.FeedBackActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title"
+        android:paddingRight="@dimen/px_thirdty_two">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_ninety_six"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iv_background"
+            android:paddingBottom="@dimen/px_twenty_four"
+            android:paddingLeft="@dimen/title_back_padLeft"
+            android:paddingTop="@dimen/px_twenty_four"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/title_back"
+            android:text="意见反馈"
+            android:textColor="#f4f4f4"
+            android:textSize="@dimen/sp_eighteen" />
+
+    </RelativeLayout>
+    <EditText
+        android:background="@color/ali_feedback_color_white"
+        android:padding="@dimen/px_thirdty_two"
+        android:gravity="top"
+        android:hint="请写下您的建议（不少于10个字）"
+        android:textColorHint="#cfcfcf"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/et_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="136dp" />
+    <Button
+        android:id="@+id/bt_send_feedback"
+        android:layout_width="match_parent"
+        android:layout_below="@id/et_feedback_content"
+        android:text="提交"
+        android:background="@drawable/bt_next_bg"
+        android:textSize="@dimen/sp_thirty_two"
+        android:layout_marginTop="@dimen/px_thirdty_two"
+        android:layout_marginLeft="@dimen/px_thirdty_two"
+        android:layout_marginRight="@dimen/px_thirdty_two"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/view_shadow" />
+</RelativeLayout>

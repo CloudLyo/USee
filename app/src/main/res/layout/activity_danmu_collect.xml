@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:fitsSystemWindows="true"
+    tools:context="com.white.usee.app.activity.DanmuCollectActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无收藏"
+        android:textColor="@color/text_blue"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:id="@+id/tv_no_collect"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/title"
+        android:paddingRight="@dimen/px_thirdty_two">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_ninety_six"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iv_background"
+            android:paddingBottom="@dimen/px_twenty_four"
+            android:paddingLeft="@dimen/title_back_padLeft"
+            android:paddingTop="@dimen/px_twenty_four"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/title_back"
+            android:text="弹幕收藏"
+            android:textColor="#f4f4f4"
+            android:textSize="@dimen/sp_eighteen"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:animateLayoutChanges="true"
+        android:divider="#dbdbdb"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/list_danmu_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/view_shadow"/>
+    <View
+        android:id="@+id/view_mesh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="#4d0d63ab"
+        android:visibility="gone"/>
+</RelativeLayout>

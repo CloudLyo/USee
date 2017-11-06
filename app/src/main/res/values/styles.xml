@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="LightTheme" parent="My.AppTheme">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="buttom_layout_color">@color/buttom_layout_light</item>
+        <item name="mainbg">@color/mainbg_light</item>
+        <item name="top_layout_color">@color/top_layout_light</item>
+        <item name="tag_item_drawable">@drawable/tag_item_light</item>
+        <item name="tag_item_text_pressed">@color/tag_item_text_pressed_light</item>
+        <item name="tag_first_text">@color/tag_first_text_light</item>
+        <item name="layout_item">@color/layout_item_light</item>
+        <item name="danmu_controller_bg">@color/bt_danmucontroller_light</item>
+        <item name="bt_send_bg">@drawable/send_bt_bg_light</item>
+    </style>
+
+    <!-- Base application theme. -->
+
+    <style name="My.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+    <!-- 对话框主题. -->
+    <style name="alert_dialog" parent="Animation.AppCompat.Dialog">
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--半透明-->
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--基础对话框主题-->
+
+    <style name="alert_dialog2" parent="AlertDialog.AppCompat.Light">
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/dialog_color</item>
+        <!--标题颜色-->
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <declare-styleable name="linewarplayout">
+        <attr name="magin" format="integer" />
+        <attr name="itemBg" format="reference"></attr>
+    </declare-styleable>
+
+    <style name="LightTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="LightTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="PoPupWindowAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation" >@anim/slide_in_from_top_usee</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_from_top_usee</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="ExpandedToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">22sp</item>
+
+    </style>
+    <style name="MyAlertDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="loading_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>       <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowBackground">@color/transparent</item> <!-- 设置dialog的背景 -->
+        <item name="android:windowNoTitle">true</item>      <!-- 是否显示title -->
+        <item name="android:windowIsTranslucent">true</item>    <!-- 是否半透明 -->
+        <item name="android:windowIsFloating">true</item>       <!-- 是否浮现在activity之上 -->
+        <item name="android:windowContentOverlay">@null</item>  <!-- 也是个drawable，定义contentoverlay的背景 -->
+        <item name="android:backgroundDimEnabled">true</item>  <!-- 背景是否模糊显示 -->
+    </style>
+</resources>

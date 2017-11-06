@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/px_thirdty_two"
+    android:background="#f4f4f4"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/ali_feedback_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="74dp">
+        <EditText
+            android:id="@+id/et_user_name"
+            android:textSize="16sp"
+            android:imeOptions="actionDone"
+            android:maxLength="10"
+            android:text="蜡笔小新"
+            android:background="@color/transparent"
+            android:paddingTop="@dimen/px_thirdty_two"
+            android:paddingLeft="@dimen/px_thirdty_two"
+            android:paddingRight="@dimen/px_thirdty_two"
+            android:textColor="#816d64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/px_thirdty_two"
+            android:textSize="12sp"
+            android:textColor="#cfcfcf"
+            android:text="2-10个字,支持中文、英文、数字"
+            android:layout_marginLeft="@dimen/px_thirdty_two"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_rest"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/px_thirdty_two"
+            android:textSize="12sp"
+            android:textColor="#cfcfcf"
+            android:text="6"
+            android:layout_marginRight="@dimen/px_thirdty_two"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

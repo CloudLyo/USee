@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:fitsSystemWindows="true"
+    tools:context="com.white.usee.app.activity.DanmuDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/title"
+        android:paddingRight="@dimen/px_thirdty_two">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_ninety_six"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iv_background"
+            android:paddingBottom="@dimen/px_twenty_four"
+            android:paddingLeft="@dimen/title_back_padLeft"
+            android:paddingTop="@dimen/px_twenty_four"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/title_back"
+            android:text="@string/danmu_details"
+            android:textColor="#f4f4f4"
+            android:textSize="@dimen/sp_eighteen" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/ali_feedback_color_white"
+        android:id="@+id/rl_danmuDetail"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:padding="@dimen/px_thirdty_two"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:src="@drawable/default_head"
+            android:scaleType="fitXY"
+            android:background="@color/transparent"
+            android:layout_width="@dimen/px_sixty_four"
+            android:layout_height="@dimen/px_sixty_four" />
+        <LinearLayout
+            android:layout_toRightOf="@id/iv_head"
+            android:layout_marginTop="@dimen/px_twenty_four"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:textColor="#5f7b8f"
+                android:text="默"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:id="@+id/iv_sex"
+                android:layout_marginLeft="@dimen/px_sixteen"
+                android:src="@drawable/sex_woman"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/px_twenty_eight"
+                android:layout_height="@dimen/px_twenty_eight" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_time"
+            android:text="3天前"
+            android:layout_marginTop="@dimen/px_twenty_four"
+            android:layout_alignParentRight="true"
+            android:textColor="#cfcfcf"
+            android:textSize="@dimen/sp_twenty_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.white.usee.app.util.emojicon.EmojiconTextView
+            android:textIsSelectable="true"
+            android:text="这个世界已经失控，我们只能做好自己.."
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:layout_below="@id/iv_head"
+            android:autoLink="web"
+            android:textColor="#5a5a5a"
+            android:textSize="18sp"
+            emojicon:emojiconAlignment="baseline"
+            android:id="@+id/tv_danmu_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.lzy.ninegrid.NineGridView
+            android:id="@+id/grid_view"
+            app:ngv_maxSize="3"
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:visibility="gone"
+            android:layout_below="@id/tv_danmu_content"
+            app:ngv_gridSpacing="@dimen/px_thirdty_two"
+            app:ngv_singleImageSize="@dimen/px_one_hundred_ninety_six"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_one_hundred_ninety_six" />
+        <LinearLayout
+            android:id="@+id/ly_photos"
+            android:orientation="horizontal"
+            android:layout_below="@id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:text="发在"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:textColor="#cfcfcf"
+            android:layout_below="@id/ly_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_topicName"
+            android:text="英国脱欧"
+            android:textColor="#5f7b8f"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_toRightOf="@+id/tv_submit"
+            android:layout_toEndOf="@+id/tv_submit" />
+
+        <TextView
+            android:id="@+id/tv_danmu_location"
+            android:text="发布于1km内"
+            android:textSize="12sp"
+            android:textColor="#cfcfcf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:layout_below="@id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+            <ImageButton
+                android:id="@+id/ib_like"
+                android:layout_width="@dimen/px_forty_eight"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bt_like_normal"
+                android:background="@color/transparent"
+                android:layout_height="@dimen/px_forty_eight" />
+            <TextView
+                android:layout_marginLeft="@dimen/px_sixteen"
+                android:text="0"
+                android:id="@+id/tv_like_num"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/edit_hint"
+                android:textSize="@dimen/sp_twenty_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:layout_below="@id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/ib_unlike"
+                android:layout_width="@dimen/px_forty_eight"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bt_unlike_normal"
+                android:background="@color/transparent"
+                android:layout_height="@dimen/px_forty_eight" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/px_sixteen"
+                android:text="0"
+                android:id="@+id/tv_unlike_num"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/edit_hint"
+                android:textSize="@dimen/sp_twenty_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:layout_below="@id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+            <ImageButton
+                android:id="@+id/ib_collect"
+                android:layout_width="@dimen/px_forty_eight"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bt_collect"
+                android:background="@color/transparent"
+                android:layout_height="@dimen/px_forty_eight" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:paddingTop="@dimen/px_thirdty_two"
+        android:paddingLeft="@dimen/px_thirdty_two"
+        android:text="全部评论 0"
+        android:textColor="@color/edit_hint"
+        android:id="@+id/tv_commentNum"
+        android:layout_below="@id/rl_danmuDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:layout_marginBottom="@dimen/px_ninety_six"
+        android:id="@+id/list_comment"
+        android:layout_below="@id/tv_commentNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shadow_height"
+            android:background="@drawable/et_shadow" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"
+            android:paddingBottom="@dimen/px_sixteen"
+            android:paddingLeft="@dimen/px_thirdty_two"
+            android:paddingRight="@dimen/px_thirdty_two"
+            android:paddingTop="@dimen/px_sixteen">
+            <Button
+                android:id="@+id/bt_private"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bt_private" />
+            <RelativeLayout
+                android:id="@+id/select_id"
+                android:layout_toRightOf="@id/bt_private"
+                android:layout_marginLeft="@dimen/px_sixteen"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY"
+                    android:id="@+id/bt_select_id"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/default_head" />
+                <ImageView
+                    android:layout_width="@dimen/px_sixteen"
+                    android:src="@drawable/triangle"
+                    android:layout_alignBottom="@id/bt_select_id"
+                    android:layout_alignRight="@id/bt_select_id"
+                    android:layout_height="@dimen/px_sixteen" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/bt_sendComment"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bt_sendmsg_bg" />
+
+            <Button
+                android:id="@+id/bt_emoji"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_sixteen"
+                android:layout_toLeftOf="@id/bt_sendComment"
+                android:background="@drawable/emoji" />
+
+            <com.white.usee.app.util.emojicon.EmojiconEditText
+                android:id="@+id/et_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_sixteen"
+                android:maxLength="256"
+                android:maxHeight="@dimen/et_comment_max_height"
+                android:layout_toLeftOf="@id/bt_emoji"
+                android:layout_toRightOf="@id/select_id"
+                android:background="@color/transparent"
+                android:hint="@string/comment_with_dots"
+                emojicon:emojiconSize="20sp"
+                android:padding="0dp"
+                android:textColor="#000000"
+                android:textColorHint="#CECECE"
+                android:textSize="@dimen/sp_thirty_two" />
+
+        </RelativeLayout>
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/emojicons"
+            android:layout_width="match_parent"
+            android:layout_height="230dp" />
+        <include
+            android:visibility="gone"
+            android:id="@+id/ly_select_id"
+            layout="@layout/layout_select_id"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/view_mesh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="#4d0d63ab"
+        android:visibility="gone" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/view_shadow" />
+
+
+</RelativeLayout>

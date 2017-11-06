@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/tag_item_light"
+    android:text="标签长度应该"
+    android:textColor="@color/tag_item_text_normal_light"
+    android:textSize="14sp" />
+
+

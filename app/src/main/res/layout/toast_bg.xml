@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtMessage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawablePadding="@dimen/px_sixteen"
+    android:paddingTop="@dimen/px_sixteen"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/px_thirdty_two"
+    android:paddingRight="@dimen/px_thirdty_two"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:textSize="16dp"
+    android:text="成功踩一下"
+    android:background="@drawable/toast_bg"/>

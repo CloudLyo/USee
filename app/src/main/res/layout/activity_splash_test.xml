@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_splash_test"
+    android:layout_width="match_parent"
+    android:background="@color/title"
+    android:layout_height="match_parent"
+    tools:context="com.white.usee.app.activity.SplashTestActivity">
+    <com.white.usee.app.view.particleview.ParticleView
+        android:id="@+id/particleview"
+        android:layout_width="match_parent"
+        pv:pv_background_color="@color/title"
+        pv:pv_host_text="US"
+        pv:pv_host_text_size = "60sp"
+        pv:pv_particle_text="ee"
+        pv:pv_particle_text_size="25sp"
+        pv:pv_text_color="#FFF"
+        android:layout_height="match_parent" />
+</RelativeLayout>

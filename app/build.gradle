@@ -1,0 +1,104 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'nanjing'
+            keyPassword 'jian02xin'
+            storeFile file('C:\\Users\\cloud\\Desktop\\whitecostume-usee-master\\usee\\usee.jks')
+            storePassword 'jian02xin'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.white.usee.app"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 11
+        versionName "2.1.4"
+        multiDexEnabled true
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    productFlavors {
+
+        baidu {}
+//        wandoujia {}
+//        jiuyao{}
+//        android{}
+//        qq {}
+//        qihu360 {}
+//        xiaomi {}
+//        huawei {}
+//        meizu {}
+//        liantong {}
+//        anzhi {}
+//        leshi{}
+//        jinli{}
+//        lianxiang{}
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.5.0'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.alibaba:fastjson:1.1.54.android'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.github.whitecostume:GalleryPick:1.3.7'
+    compile 'com.qiniu:qiniu-android-sdk:7.2.3'
+    compile 'com.lzy.widget:ninegridview:0.2.0'
+    compile 'com.synnapps:carouselview:0.1.4'
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+//    compile 'com.hulab.android:debugkit:1.1.0'
+}

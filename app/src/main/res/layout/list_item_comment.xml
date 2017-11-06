@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/item_pressed"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingTop="@dimen/px_thirdty_two"
+        android:paddingLeft="@dimen/px_thirdty_two"
+        android:paddingRight="@dimen/px_thirdty_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ly_comment_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="@dimen/px_forty_eight"
+                android:layout_height="@dimen/px_forty_eight">
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="@dimen/px_forty_eight"
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_head"
+                    android:layout_height="@dimen/px_forty_eight" />
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/sex_man"
+                    android:id="@+id/iv_sex"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="我"
+                android:textColor="#5f7b8f"
+                android:layout_marginLeft="@dimen/px_sixteen"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_comment_name" />
+
+            <TextView
+                android:id="@+id/tv_comment_style"
+                android:layout_width="wrap_content"
+                android:text="回复"
+                android:layout_marginLeft="@dimen/px_twenty_four"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_reply_name"
+                android:layout_width="wrap_content"
+                android:text="Susan"
+                android:textColor="#5f7b8f"
+                android:layout_marginLeft="@dimen/px_twenty_four"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="13:10"
+            android:id="@+id/tv_time"
+            android:textColor="#969696"
+            android:layout_height="wrap_content" />
+        <com.white.usee.app.util.emojicon.EmojiconTextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:id="@+id/tv_comment_content"
+            android:text="脑残儿童欢乐多"
+            android:textColor="#5a5a5a"
+            android:layout_below="@id/ly_comment_person"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/tv_comment_content"
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:background="#dbdbdb"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/view_mesh"
+        android:visibility="gone"
+        android:background="@color/view_mesh"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

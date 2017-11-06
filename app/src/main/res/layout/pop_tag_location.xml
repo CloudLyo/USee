@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_danmu_controller"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:background="#4486bc"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_thirdty_two">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周围话题范围"
+            android:textSize="14sp"
+            android:textColor="@color/ali_feedback_color_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="15km"
+            android:id="@+id/tv_near_radius"
+            android:textSize="14sp"
+            android:textColor="@color/ali_feedback_color_white" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekbar_near"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progress="0"
+        android:thumbOffset="3dp"
+        android:paddingBottom="@dimen/px_thirdty_two"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumbTint="@color/ali_feedback_color_white" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_corner_8dp"
+        android:paddingTop="30dp">
+
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/gc_danmaku"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:id="@+id/slide_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:background="@color/primary"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/control_danmu"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/bt_pauseDanmu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/pause" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/openControlBt"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@color/primary"
+                android:text=">"
+                android:textSize="26dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

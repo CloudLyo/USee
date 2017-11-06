@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_bg"
+                tools:context="com.white.usee.app.activity.CreateTagActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/title">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_ninety_six"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iv_background"
+            android:paddingBottom="@dimen/px_twenty_four"
+            android:paddingLeft="@dimen/title_back_padLeft"
+            android:paddingTop="@dimen/px_twenty_four"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/title_back"
+            android:text="@string/activity_create_tag"
+            android:textColor="#f4f4f4"
+            android:textSize="@dimen/sp_eighteen"/>
+
+        <TextView
+            android:id="@+id/tv_create_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_ninety_six"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/px_thirdty_two"
+            android:text="完成"
+            android:textColor="#f4f4f4"
+            android:textSize="@dimen/sp_eighteen"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/view_shadow"/>
+
+    <ScrollView
+        android:layout_below="@id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_tag_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:paddingLeft="@dimen/px_thirdty_two"
+                android:paddingRight="@dimen/px_thirdty_two"
+                android:paddingTop="@dimen/px_forty_eight">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="话题名称"
+                    android:textColor="@color/warn_title"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_name"
+                    android:layout_toRightOf="@id/tv_name"
+                    android:text="（必填）"
+                    android:textColor="@color/warn_title"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/et_tag_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_ninety_six"
+                    android:layout_below="@id/tv_name"
+                    android:layout_marginTop="@dimen/px_thirdty_two"
+                    android:background="@color/ali_feedback_color_white"
+                    android:hint="@string/create_tag_tip"
+                    android:maxEms="15"
+                    android:maxLength="15"
+                    android:paddingLeft="@dimen/px_thirdty_two"
+                    android:textColor="#5f5f5f"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/sp_thirty_two"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_add_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_tag_name"
+                android:paddingLeft="@dimen/px_thirdty_two"
+                android:paddingRight="@dimen/px_thirdty_two"
+                android:paddingTop="@dimen/px_forty_eight">
+
+                <TextView
+                    android:id="@+id/tv_add_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="话题配图"
+                    android:textColor="@color/warn_title"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_add_photo"
+                    android:layout_toRightOf="@id/tv_add_photo"
+                    android:text="（选填）"
+                    android:textColor="@color/warn_title"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:id="@+id/ly_photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_one_hundred_ninety_six"
+                    android:layout_below="@id/tv_add_photo"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/ib_add_phote"
+                    android:layout_width="@dimen/px_one_hundred_ninety_six"
+                    android:layout_height="@dimen/px_one_hundred_ninety_six"
+                    android:layout_below="@id/tv_add_photo"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/ly_photos"
+                    android:background="@drawable/add"
+                    android:padding="@dimen/px_forty_eight"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/add_center"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tag_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_add_photo"
+                android:paddingLeft="@dimen/px_thirdty_two"
+                android:paddingRight="@dimen/px_thirdty_two"
+                android:paddingTop="@dimen/px_forty_eight">
+
+                <TextView
+                    android:id="@+id/tv_tag_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="话题描述"
+                    android:textColor="@color/warn_title"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_tag_description"
+                    android:layout_toRightOf="@id/tv_tag_description"
+                    android:text="（选填）"
+                    android:textColor="@color/warn_title"
+                    android:textSize="12sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_below="@id/tv_tag_description"
+                    android:layout_marginTop="@dimen/px_thirdty_two">
+
+                    <EditText
+                        android:id="@+id/et_tag_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:background="@color/ali_feedback_color_white"
+                        android:gravity="top"
+                        android:maxLength="30"
+                        android:paddingLeft="@dimen/px_thirdty_two"
+                        android:paddingTop="@dimen/px_thirdty_two"
+                        android:textColor="#5f5f5f"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="@dimen/sp_thirty_two"/>
+
+                    <TextView
+                        android:id="@+id/tv_rest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/px_thirdty_two"
+                        android:layout_marginRight="@dimen/px_thirdty_two"
+                        android:text="0"
+                        android:textColor="@color/text_hint"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tag_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_tag_description"
+                android:paddingLeft="@dimen/px_thirdty_two"
+                android:paddingRight="@dimen/px_thirdty_two"
+                android:paddingTop="@dimen/px_forty_eight">
+
+                <TextView
+                    android:id="@+id/tv_add_categroy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="话题分类"
+                    android:textColor="@color/warn_title"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_add_categroy"
+                    android:layout_toRightOf="@id/tv_add_categroy"
+                    android:text="（选填）"
+                    android:textColor="@color/warn_title"
+                    android:textSize="12sp"/>
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/tfl_tag_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_add_categroy"
+                    android:layout_marginTop="6dp"
+                    app:max_select="9">
+
+                </com.zhy.view.flowlayout.TagFlowLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_tag_category"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/px_forty_eight">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/px_thirdty_two"
+                    android:paddingRight="@dimen/px_thirdty_two">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周围话题范围"
+                        android:textColor="@color/warn_title"
+                        android:textSize="16sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="km"
+                        android:textColor="@color/warn_title"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_tag_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tv_km"
+                        android:text="15"
+                        android:textColor="@color/warn_title"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/seekbar_tag_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_thirdty_two"
+                    android:max="30"
+                    android:maxHeight="2dp"
+                    android:minHeight="2dp"
+                    android:progress="15"
+                    android:progressDrawable="@drawable/seekbar_progress"
+                    android:thumb="@drawable/thumb_seekbar"
+                    android:thumbOffset="1dp"
+                    android:thumbTint="@color/ali_feedback_color_white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

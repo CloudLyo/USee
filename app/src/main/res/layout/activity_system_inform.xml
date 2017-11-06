@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_bg"
+                android:fitsSystemWindows="true"
+                tools:context="com.white.usee.app.activity.DanmuDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/title"
+        android:paddingRight="@dimen/px_thirdty_two">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_ninety_six"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iv_background"
+            android:paddingBottom="@dimen/px_twenty_four"
+            android:paddingLeft="@dimen/title_back_padLeft"
+            android:paddingTop="@dimen/px_twenty_four"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/title_back"
+            android:text="系统消息"
+            android:textColor="#f4f4f4"
+            android:textSize="@dimen/sp_eighteen" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/ali_feedback_color_white"
+        android:id="@+id/rl_danmuDetail"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:padding="@dimen/px_thirdty_two"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:src="@drawable/default_head"
+            android:scaleType="fitXY"
+            android:background="@color/transparent"
+            android:layout_width="@dimen/px_sixty_four"
+            android:layout_height="@dimen/px_sixty_four" />
+        <LinearLayout
+            android:layout_toRightOf="@id/iv_head"
+            android:layout_marginTop="@dimen/px_twenty_four"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:textColor="#5f7b8f"
+                android:text="系统"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_time"
+            android:text="3天前"
+            android:layout_marginTop="@dimen/px_twenty_four"
+            android:layout_alignParentRight="true"
+            android:textColor="#cfcfcf"
+            android:textSize="@dimen/sp_twenty_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <com.white.usee.app.util.emojicon.EmojiconTextView
+            android:textIsSelectable="true"
+            android:text="这个世界已经失控，我们只能做好自己.."
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:layout_below="@id/iv_head"
+            android:autoLink="web"
+            android:textColor="#5a5a5a"
+            android:textSize="14sp"
+            emojicon:emojiconAlignment="baseline"
+            android:id="@+id/tv_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

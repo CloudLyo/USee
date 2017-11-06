@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:paddingBottom="@dimen/px_sixty_four"
+    android:orientation="vertical">
+    <ImageButton
+        android:layout_marginLeft="@dimen/px_thirdty_two"
+        android:layout_marginTop="@dimen/px_sixty_four"
+        android:id="@+id/ib_send_danmu_gallery"
+        android:src="@drawable/gallery"
+        android:paddingTop="@dimen/px_forty_two"
+        android:paddingBottom="@dimen/px_forty_two"
+        android:scaleType="fitCenter"
+        android:background="@drawable/photo_audio_send_danmu_bg"
+        android:layout_width="@dimen/px_one_hundred_sixty"
+        android:layout_height="@dimen/px_one_hundred_sixty" />
+    <ImageButton
+        android:layout_marginTop="@dimen/px_sixty_four"
+        android:id="@+id/ib_send_danmu_camera"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/camera"
+        android:paddingTop="@dimen/px_forty_two"
+        android:paddingBottom="@dimen/px_forty_two"
+        android:scaleType="fitCenter"
+        android:background="@drawable/photo_audio_send_danmu_bg"
+        android:layout_width="@dimen/px_one_hundred_sixty"
+        android:layout_height="@dimen/px_one_hundred_sixty" />
+    <ImageButton
+        android:id="@+id/ib_show_send_danmu_audio"
+        android:layout_marginRight="@dimen/px_thirdty_two"
+        android:layout_marginTop="@dimen/px_sixty_four"
+        android:src="@drawable/audio"
+        android:paddingTop="@dimen/px_thirty_six"
+        android:paddingBottom="@dimen/px_thirty_six"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/photo_audio_send_danmu_bg"
+        android:layout_width="@dimen/px_one_hundred_sixty"
+        android:layout_height="@dimen/px_one_hundred_sixty" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#d4d4d4"
+        android:layout_height="1dp"/>
+</RelativeLayout>

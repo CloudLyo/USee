@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/px_thirdty_two"
+              android:paddingLeft="@dimen/px_thirdty_two"
+              android:paddingRight="@dimen/px_thirdty_two"
+              android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/tv_hot_search_item"
+            android:textColor="#5a5a5a"
+            android:text="热门话题"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <View
+            android:layout_marginTop="@dimen/px_thirdty_two"
+            android:layout_width="match_parent"
+            android:background="#cfcfcf"
+            android:layout_height="1dp"/>
+</LinearLayout>
